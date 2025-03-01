@@ -1,5 +1,7 @@
 import React from 'react'
-
+import concurrency from '../assets/concurrency.png'
+import pomodoro from '../assets/pomodoro.PNG'
+import stopwatch from '../assets/stopwatch.png'
 function challenges() {
   return (
     <div>
@@ -10,16 +12,14 @@ function challenges() {
         <ul className="project__list">
           <li className="project">
             <div className="project__wrapper">
-              <img src='./assets/concurrency.png' className="project__img" alt="Concurrency project"/>
+              <img src={concurrency} className="project__img" alt="Concurrency project"/>
               <div className="project__description">
                 <h3 className="project__description--title">Concurrency project</h3>
                 <h4 className="project__description--sub-title">
                   Html, CSS, JavaScript, React
                 </h4>
                 <p className="project__description--para">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
-                  luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
+                 This project is about loading 100 user profiles in under 1.5 seconds and doing that is using Promise.all to call all of them at once.
                 </p>
                 <div className="project__description--links">
                   <a href="https://www.github.com/yourlink" target="_blank" className="project__description--link">
@@ -34,7 +34,7 @@ function challenges() {
           </li>
           <li className="project">
             <div className="project__wrapper">
-              <img src="./assets/loopit.png" className="project__img" alt="Car subscription project"/>
+              <img src={pomodoro} className="project__img" alt="Car subscription project"/>
               <div className="project__description">
                 <h3 className="project__description--title">Car sales project</h3>
                 <h4 className="project__description--sub-title">
@@ -58,7 +58,7 @@ function challenges() {
           </li>
           <li className="project">
             <div className="project__wrapper">
-              <img src="./assets/loopit.png" className="project__img" alt="Car subscription project"/>
+              <img src={stopwatch} className="project__img" alt="Car subscription project"/>
               <div className="project__description">
                 <h3 className="project__description--title">Car sales project</h3>
                 <h4 className="project__description--sub-title">

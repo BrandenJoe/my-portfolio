@@ -308,7 +308,7 @@ nav {
 /* PROJECTS */
 
 .project {
-  margin-bottom: 135px;
+  margin-bottom: 50px;
 }
 
 .project:last-child {
@@ -317,6 +317,7 @@ nav {
 
 .project__img {
   width: 100%;
+  
   transition: all 500ms ease;
 }
 

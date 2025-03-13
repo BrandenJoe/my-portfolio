@@ -14,7 +14,7 @@ function SliderComponent() {
       centerMode: true,
       infinite: true,
       centerPadding: "60px",
-      slidesToShow: 3,
+      slidesToShow: 2,
       speed: 500
     };
 
@@ -52,9 +52,7 @@ function SliderComponent() {
               Html, CSS, JavaScript, Vue, Vuex
             </h4>
             <p className="project__description--para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
-              luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
+              This challenge is about creating a pomodoro clock that counts down from 25 minutes and you can reset it or stop it.
             </p>
             <div className="project__description--links">
               <a href="https://www.github.com/yourlink" target="_blank" className="project__description--link">
@@ -76,9 +74,7 @@ function SliderComponent() {
               Html, CSS, JavaScript, Vue, Vuex
             </h4>
             <p className="project__description--para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
-              luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
+            This Challenge was creating a stopwatch that could start time, reset, and pause with all of it functioning.
             </p>
             <div className="project__description--links">
               <a href="https://www.github.com/yourlink" target="_blank" className="project__description--link">

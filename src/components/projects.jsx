@@ -60,14 +60,12 @@ function Projects() {
             <div className="project__wrapper">
               <img src={stopwatch} className="project__img" alt="Car subscription project"/>
               <div className="project__description">
-                <h3 className="project__description--title">Car sales project</h3>
+                <h3 className="project__description--title">Stopwatch Challenge</h3>
                 <h4 className="project__description--sub-title">
                   Html, CSS, JavaScript, Vue, Vuex
                 </h4>
                 <p className="project__description--para">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
-                  luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
+                 This Challenge was creating a stopwatch that could start time, reset, and pause with all of it functioning.
                 </p>
                 <div className="project__description--links">
                   <a href="https://www.github.com/yourlink" target="_blank" className="project__description--link">

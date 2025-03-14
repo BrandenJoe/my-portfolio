@@ -1,8 +1,7 @@
 import React from 'react'
 import SliderComponent from './SliderComponent'
-import concurrency from '../assets/concurrency.png'
-import pomodoro from '../assets/pomodoro.PNG'
-import stopwatch from '../assets/stopwatch.png'
+
+
 
 function challenges() {
   return (

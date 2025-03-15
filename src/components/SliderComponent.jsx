@@ -77,7 +77,9 @@ function SliderComponent() {
       <Slider {...settings}>
         <div className="project">
           <div className="project__wrapper">
+          <a href="https://github.com/BrandenJoe/Pomodoro" target="_blank" rel="noopener noreferrer">
             <img src={concurrency} className="project__img" alt="Concurrency project" />
+            </a>
             <div className="project__description">
               <h3 className="project__description--title">Concurrency project</h3>
               <h4 className="project__description--sub-title">

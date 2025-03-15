@@ -76,6 +76,7 @@ function SliderComponent() {
     <div className="slider-container">
       <Slider {...settings}>
         <div className="project">
+
           <div className="project__wrapper">
           <a href="https://github.com/BrandenJoe/Pomodoro" target="_blank" rel="noopener noreferrer">
             <img src={concurrency} className="project__img" alt="Concurrency project" />
@@ -89,10 +90,10 @@ function SliderComponent() {
                 This project is about loading 100 user profiles in under 1.5 seconds and doing that is using Promise.all to call all of them at once.
               </p>
               <div className="project__description--links">
-                <a href="https://www.github.com/yourlink" target="_blank" className="project__description--link">
+                <a href="https://github.com/BrandenJoe/Pomodoro" target="_blank" className="project__description--link">
                   <i className="fab fa-github"></i>
                 </a>
-                <a href="https://www.yourwebsite.com" className="project__description--link">
+                <a href="https://github.com/BrandenJoe/Pomodoro" className="project__description--link">
                   <i className="fas fa-link"></i>
                 </a>
               </div>
@@ -101,23 +102,19 @@ function SliderComponent() {
         </div>
         <div className="project">
           <div className="project__wrapper">
-            <img src={pomodoro} className="project__img" alt="Pomodoro project" />
+            <img src={pomodoro} className="project__img" alt="Pomodoro project" href="https://github.com/BrandenJoe/Pomodoro" />
+            
             <div className="project__description">
+              <a href="https://github.com/BrandenJoe/Pomodoro" target='_blank' rel="noopener noreferrer">
+
               <h3 className="project__description--title">Pomodoro project</h3>
-              <h4 className="project__description--sub-title">
+               <h4 className="project__description--sub-title">
                 Html, CSS, JavaScript, Vue, Vuex
               </h4>
               <p className="project__description--para">
                 This challenge is about creating a pomodoro clock that counts down from 25 minutes and you can reset it or stop it.
               </p>
-              <div className="project__description--links">
-                <a href="https://www.github.com/yourlink" target="_blank" className="project__description--link">
-                  <i className="fab fa-github"></i>
-                </a>
-                <a href="https://www.yourwebsite.com" className="project__description--link">
-                  <i className="fas fa-link"></i>
-                </a>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -125,6 +122,8 @@ function SliderComponent() {
           <div className="project__wrapper">
             <img src={stopwatch} className="project__img" alt="Stopwatch project" />
             <div className="project__description">
+              <a href="https://github.com/BrandenJoe/Stopwatch" target='_blank'>
+
               <h3 className="project__description--title">Stopwatch project</h3>
               <h4 className="project__description--sub-title">
                 Html, CSS, JavaScript, Vue, Vuex
@@ -132,11 +131,12 @@ function SliderComponent() {
               <p className="project__description--para">
                 This Challenge was creating a stopwatch that could start time, reset, and pause with all of it functioning.
               </p>
+              </a>
               <div className="project__description--links">
-                <a href="https://www.github.com/yourlink" target="_blank" className="project__description--link">
+                <a href="https://github.com/BrandenJoe/Stopwatch" target="_blank" className="project__description--link">
                   <i className="fab fa-github"></i>
                 </a>
-                <a href="https://www.yourwebsite.com" className="project__description--link">
+                <a href="https://github.com/BrandenJoe/Stopwatch" className="project__description--link">
                   <i className="fas fa-link"></i>
                 </a>
               </div>

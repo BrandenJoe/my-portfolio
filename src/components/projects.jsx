@@ -10,29 +10,27 @@ function Projects() {
         <h1 className="section__title">Here are some of my <span className="text--purple">Projects</span> I have completed aswell</h1>
         <ul className="project__list">
           <li className="project">
-            <div className="project__wrapper">
+            <a 
+            href="https://github.com/BrandenJoe/Branden-internship"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project__wrapper"
+            style={{ textDecoration: 'none', color: 'inherit' }}
+            >
               <img src={NFT} className="project__img" alt="Concurrency project"/>
-              <a href="https://github.com/BrandenJoe/Branden-internship"  target='_blank' >
-
-              <div className="project__description">
+             
+              <div className="project__description" href="https://github.com/BrandenJoe/Branden-internship">
                 <h3 className="project__description--title">NFT Project</h3>
                 <h4 className="project__description--sub-title">
                   Html, CSS, JavaScript, React
                 </h4>
                 <p className="project__description--para">
-                 This project is about turning a website fulling dyanmic with loading skeleton states, using the fetch API to get data from a server and displaying it on the page. I also used async await to make the code cleaner and more readable. I also made every image functional and authors.
-                </p>
-                <div className="project__description--links">
-                  <a href="https://www.github.com/yourlink" target="_blank" className="project__description--link">
-                    <i className="fab fa-github"></i>
-                  </a>
-                  <a href="https://www.yourwebsite.com" className="project__description--link">
-                    <i className="fas fa-link"></i>
-                  </a>
-                </div>
+                This project is about turning a website fully dynamic with loading skeleton states,
+        using the fetch API to get data from a server and displaying it on the page.
+        I also used async/await to make the code cleaner and more readable.
+        Every image is functional and includes author attribution.                </p>
               </div>
               </a>
-            </div>
           </li>
           <li className="project">
             <div className="project__wrapper">

@@ -1,25 +1,26 @@
 import React from 'react'
-import concurrency from '../assets/concurrency.png'
-import pomodoro from '../assets/pomodoro.PNG'
-import stopwatch from '../assets/stopwatch.png'
+import NFT from '../assets/nft.png'
+
 function Projects() {
   return (
     <div>
       <section id="projects">
     <div className="container">
       <div className="row">
-        <h1 className="section__title">Here are some of my <span className="text--purple">Challenges</span> I have completed</h1>
+        <h1 className="section__title">Here are some of my <span className="text--purple">Projects</span> I have completed aswell</h1>
         <ul className="project__list">
           <li className="project">
             <div className="project__wrapper">
-              <img src={concurrency} className="project__img" alt="Concurrency project"/>
+              <img src={NFT} className="project__img" alt="Concurrency project"/>
+              <a href="https://github.com/BrandenJoe/Branden-internship"  target='_blank' >
+
               <div className="project__description">
-                <h3 className="project__description--title">Concurrency project</h3>
+                <h3 className="project__description--title">NFT Project</h3>
                 <h4 className="project__description--sub-title">
                   Html, CSS, JavaScript, React
                 </h4>
                 <p className="project__description--para">
-                 This project is about loading 100 user profiles in under 1.5 seconds and doing that is using Promise.all to call all of them at once.
+                 This project is about turning a website fulling dyanmic with loading skeleton states, using the fetch API to get data from a server and displaying it on the page. I also used async await to make the code cleaner and more readable. I also made every image functional and authors.
                 </p>
                 <div className="project__description--links">
                   <a href="https://www.github.com/yourlink" target="_blank" className="project__description--link">
@@ -30,11 +31,12 @@ function Projects() {
                   </a>
                 </div>
               </div>
+              </a>
             </div>
           </li>
           <li className="project">
             <div className="project__wrapper">
-              <img src={pomodoro} className="project__img" alt="Car subscription project"/>
+              <img src="" className="project__img" alt="Car subscription project"/>
               <div className="project__description">
                 <h3 className="project__description--title">Car sales project</h3>
                 <h4 className="project__description--sub-title">
@@ -58,7 +60,7 @@ function Projects() {
           </li>
           <li className="project">
             <div className="project__wrapper">
-              <img src={stopwatch} className="project__img" alt="Car subscription project"/>
+              <img src="" className="project__img" alt="Car subscription project"/>
               <div className="project__description">
                 <h3 className="project__description--title">Stopwatch Challenge</h3>
                 <h4 className="project__description--sub-title">

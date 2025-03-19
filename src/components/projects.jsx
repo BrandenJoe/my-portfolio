@@ -1,5 +1,6 @@
 import React from 'react'
 import NFT from '../assets/nft.png'
+import MMO from '../assets/mmo.png'
 
 function Projects() {
   return (
@@ -17,7 +18,7 @@ function Projects() {
             className="project__wrapper"
             style={{ textDecoration: 'none', color: 'inherit' }}
             >
-              <img src={NFT} className="project__img" alt="Concurrency project"/>
+              <img src={NFT} className="project__img" alt=""/>
              
               <div className="project__description" href="https://github.com/BrandenJoe/Branden-internship">
                 <h3 className="project__description--title">NFT Project</h3>
@@ -33,17 +34,21 @@ function Projects() {
               </a>
           </li>
           <li className="project">
-            <div className="project__wrapper">
-              <img src="" className="project__img" alt="Car subscription project"/>
+          <a 
+            href="https://github.com/BrandenJoe/mmo-react-web"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project__wrapper"
+            style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              <img src={MMO} alt="Car subscription project" className="project__img"/>
               <div className="project__description">
-                <h3 className="project__description--title">Car sales project</h3>
+                <h3 className="project__description--title">MMO Website</h3>
                 <h4 className="project__description--sub-title">
-                  Html, CSS, JavaScript, Vue, Vuex
+                  Html, CSS, JavaScript, React
                 </h4>
                 <p className="project__description--para">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget,
-                  luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.
+                  This project was creating a search engine for mmo games and displaying them on a website. I had a search function that filtered from A to Z and vice versa. I got the games from an API link.
                 </p>
                 <div className="project__description--links">
                   <a href="https://www.github.com/yourlink" target="_blank" className="project__description--link">
@@ -54,7 +59,7 @@ function Projects() {
                   </a>
                 </div>
               </div>
-            </div>
+            </a>
           </li>
           <li className="project">
             <div className="project__wrapper">

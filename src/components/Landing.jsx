@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Me from '../assets/me.jpeg'
 function Landing() {
   return (
  <section>
@@ -7,7 +7,7 @@ function Landing() {
 <div className="about-me__info row">
   <div className="about-me__info--container">
     <figure className="about-me__picture--mask">
-      <img  className="about-me__picture" alt="Picture of Me!" />
+      <img src={Me}  className="about-me__picture" alt="Picture of Me!" />
     </figure>
     <h1 className="about-me__info--title">
       Hey! I'm <span className="text--purple">Branden</span>&nbsp;<span className="wave">👋</span>

@@ -1,6 +1,7 @@
 import React from 'react'
 import NFT from '../assets/nft.png'
 import MMO from '../assets/mmo.png'
+import Netflix from '../assets/NetflixClone.png'
 
 function Projects() {
   return (
@@ -62,15 +63,22 @@ function Projects() {
             </a>
           </li>
           <li className="project">
-            <div className="project__wrapper">
-              <img src="" className="project__img" alt="Car subscription project"/>
+          <a 
+            href="https://github.com/BrandenJoe/Neflix-Clone"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project__wrapper"
+            style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+            
+              <img src={Netflix} className="project__img" alt="Car subscription project"/>
               <div className="project__description">
-                <h3 className="project__description--title">Stopwatch Challenge</h3>
+                <h3 className="project__description--title">Netflix Clone Project</h3>
                 <h4 className="project__description--sub-title">
-                  Html, CSS, JavaScript, Vue, Vuex
+                  Html, CSS, JavaScript, React
                 </h4>
                 <p className="project__description--para">
-                 This Challenge was creating a stopwatch that could start time, reset, and pause with all of it functioning.
+               This challenge was creating a Netflix clone with a login and fetch an api from a server and displaying it on the page. Also each image is functional and links it to the movie trailer.
                 </p>
                 <div className="project__description--links">
                   <a href="https://www.github.com/yourlink" target="_blank" className="project__description--link">
@@ -81,7 +89,7 @@ function Projects() {
                   </a>
                 </div>
               </div>
-            </div>
+            </a>
           </li>
         </ul>      
       </div>

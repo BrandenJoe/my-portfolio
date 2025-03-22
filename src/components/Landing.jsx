@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import Me from '../assets/me.jpeg'
 function Landing() {
   return (

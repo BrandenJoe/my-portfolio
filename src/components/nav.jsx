@@ -1,37 +1,61 @@
-import React from 'react'
-import '../index.css'
-import {Link} from "react-router-dom";
- function Nav() {
+import React from "react";
+import "../index.css";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+function Nav() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle("dark-mode", !isDarkMode);
+  };
+
   return (
-    <nav className='nav-background'>
-          <div className='personal__logo'>           
-          Branden Herrera </div>
-            <ul className='nav__link--list'>
-              <li>
-              <a href="" className='
+    <>
+    <nav className="nav-background">
+      <div className="personal__logo">Branden Herrera </div>
+
+      <ul className="nav__link--list">
+       
+        <li>
+          <a
+            href=""
+            className="
               nav__link--anchor
               link__hover-effect
-              link__hover-effect--black'> Languages</a>
-              </li>
-              <li>
-                
-              <a
-              href ="#projects"
-               className='
+              link__hover-effect--black"
+          >
+            {" "}
+            Languages
+          </a>
+        </li>
+        <li>
+          <a
+            href="#projects"
+            className="
                nav__link--anchor
                link__hover-effect
-               link__hover-effect--black'> Projects
-               </a>
-              </li>
-              <li>
-              <a href="/contact"
-               className='
+               link__hover-effect--black"
+          >
+            {" "}
+            Projects
+          </a>
+        </li>
+        <li>
+          <a
+            href="/contact"
+            className="
                nav__link--anchor
-               nav__link--anchor-primary'
-               > Contact</a>
-              </li>
-            </ul>
+               nav__link--anchor-primary"
+          >
+            {" "}
+            Contact
+          </a>
+        </li>
+      </ul>
+     
     </nav>
-  )
+    </>
+  );
 }
 export default Nav;

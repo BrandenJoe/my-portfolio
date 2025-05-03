@@ -5,6 +5,79 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-primary: #6030b1;
+  --color-secondary: #f8f9fa;
+
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode */
+body.dark-mode {
+  --color-background: #121212;
+  --color-foreground: #ffffff;
+  --color-primary: #bb86fc;
+  --color-secondary: #1f1f1f;
+
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+.toggle-theme-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.toggle-theme input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #6030b1;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
 
 html {
   scroll-behavior: smooth;
@@ -18,6 +91,10 @@ h1, h2, h3, h4, h5, h6, span {
 
 h1 {
   font-size: 36px;
+}
+h1 {
+  color: var(--color-heading);
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 p {
@@ -139,6 +216,9 @@ nav {
   margin: 0 12px;
   font-weight: bold
 }
+
+
+/* Optional: Style the dark mode toggle button */
 
 /* ABOUT ME */
 
@@ -307,26 +387,30 @@ height: auto;
 /* PROJECTS */
 
 .project {
-  margin-bottom: 50px;
+  margin: 40px 0; /* Add vertical space between projects */
 }
 
 .project:last-child {
-  margin-bottom: 40px;
+  margin-bottom: 60px; /* Add extra space at the bottom for the last project */
 }
 
 .project__img {
   width: 100%;
   transition: all 500ms ease;
+  margin-bottom: 15px; /* Space below the image */
 }
 
 .project__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better separation */
 }
+
 .project__wrapper:before {
   content: "";
   position: absolute;
@@ -355,7 +439,7 @@ height: auto;
 }
 
 .project__list {
-  padding-top: 40px;
+  padding-top: 40px; /* Space above the project list */
 }
 
 .project__description {
